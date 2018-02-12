@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display');
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.special-os {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.special-pf {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.not-weight {
+    font-weight: initial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+header.main-head {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: #343a40;
+    background: url(../img/header-lawyer.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.clear {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.navbar .container {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.navbar .img-logo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text-action {
+    color: #fff;
+    border-left: 0.125rem solid #e8bf5d;
+    padding-left: 1rem;
+}
+
+.text-action h1 {
+    font-weight: initial;
+    font-size: 3rem;
+    display: block;
+}
+
+.text-action span {
+    font-size: 1.5rem;
+    display: block;
+}
+
+.overlay {
+    opacity: 0.2;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+37,121212+76,121212+100 */
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 37%, #121212 76%, #121212 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 37%, #121212 76%, #121212 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 37%, #121212 76%, #121212 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#121212', GradientType=0);
+    /* IE6-9 */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.main-head .container {
+    position: relative;
+}
+
+.btn-link {
+    background: #e8bf5d;
+    color: #000;
+    border-radius: 50px;
+    padding: 0.5rem 1.8rem;
+    text-decoration: none;
+}
