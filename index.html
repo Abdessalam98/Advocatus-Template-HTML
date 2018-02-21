@@ -4,14 +4,16 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico">
     <title>Advocatus</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="js/main.js"></script>
 </head>
 
-<body>
-    <!-- Barre de navigation -->
+<body id="top">
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
             <div class="logo-nav left">
@@ -20,28 +22,64 @@
             <div class="main-navigation right">
                 <ul>
                     <li>
-                        <a href="">About Us</a>
+                        <a href="#about-us">About Us</a>
                     </li>
                     <li>
-                        <a href="">Practice Area</a>
+                        <a href="#practice-area">Practice Area</a>
                     </li>
                     <li>
-                        <a href="">Lawyers</a>
+                        <a href="#attorney">Lawyers</a>
                     </li>
                     <li>
-                        <a href="">Publications</a>
+                        <a href="#recent-publications">Publications</a>
                     </li>
                     <li>
-                        <a href="">Faq</a>
+                        <a href="#faq">Faq</a>
                     </li>
                     <li>
-                        <a href="">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Entete -->
+    <!-- Mobile Nav -->
+    <nav class="nav-mobile">
+        <div class="main-mobile">
+            <div class="logo-nav left">
+                <img class="img-logo" src="img/logo.png" width="150px" alt="logo-advocatus">
+            </div>
+            <button class="toggler" href="">
+                <span class="icon-menu">
+                    <img src="img/icon-menu.png" alt="">
+                </span>
+            </button>
+        </div>
+        <div class="collapse-div">
+            <ul class="collapse-menu">
+                <li>
+                    <a href="#about-us">About Us</a>
+                </li>
+                <li>
+                    <a href="#practice-area">Practice Area</a>
+                </li>
+                <li>
+                    <a href="#attorney">Lawyers</a>
+                </li>
+                <li>
+                    <a href="#recent-publications">Publications</a>
+                </li>
+                <li>
+                    <a href="#faq">Faq</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
     <header class="main-head">
         <div class="container">
             <div class="call-to-action">
@@ -52,7 +90,7 @@
 
                 </div>
                 <div class="btn-action">
-                    <a href="" class="btn-link special-pf">Contact Me</a>
+                    <a href="#contact" class="btn-link special-pf">Contact Me</a>
                 </div>
             </div>
         </div>
@@ -100,59 +138,43 @@
                 </div>
             </div>
         </section>
-
-        <section class="practis-area black-section clearfix" id="practis-area">
+        <!-- Practice Area -->
+        <section class="practice-area black-section clearfix" id="practice-area">
             <div class="container">
                 <div class="section-title">
-                    <h2>Practis Area</h2>
+                    <h2>Practice Area</h2>
                     <p>We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed
                         user experiences.
                     </p>
                 </div>
-                <div class="practis-content">
+                <div class="practice-content">
                     <ul>
-                        <li>
-                            <h4>Private Client Service</h4>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo
-                                duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem
-                                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
-                                ut labore et dolore magna aliquyam erat, sed diam voluptua. et ea rebum. Stet clita kasd
-                                gubergren, no sea takimata sanctus est Lorem.</p>
+                        <li class="practice-element client">
+                            <h4 class="practice-title">Private Client Service</h4>
+                            <p class="practice-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
                         </li>
-                        <li>
-                            <h4>Labour and employment</h4>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo
-                                duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem
-                                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
-                                ut labore et dolore magna aliquyam erat, sed diam voluptua. et ea rebum. Stet clita kasd
-                                gubergren, no sea takimata sanctus est Lorem.</p>
+                        <li class="practice-element employment">
+                            <h4 class="practice-title">Labour and employment</h4>
+                            <p class="practice-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
                         </li>
-                        <li>
-                            <h4>Cyber Sequre</h4>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo
-                                duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem
-                                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
-                                ut labore et dolore magna aliquyam erat, sed diam voluptua. et ea rebum. Stet clita kasd
-                                gubergren, no sea takimata sanctus est Lorem.</p>
+                        <li class="practice-element cyber">
+                            <h4 class="practice-title">Cyber Sequre</h4>
+                            <p class="practice-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
                         </li>
-                        <li>
-                            <h4>Real Estate</h4>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo
-                                duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem
-                                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
-                                ut labore et dolore magna aliquyam erat, sed diam voluptua. et ea rebum. Stet clita kasd
-                                gubergren, no sea takimata sanctus est Lorem.</p>
+                        <li class="practice-element real-estate">
+                            <h4 class="practice-title">Real Estate</h4>
+                            <p class="practice-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
 
-
+        <!-- Attorner Section -->
         <section class="attorney yellow-section clearfix" id="attorney">
             <div class="container">
                 <div class="section-title">
@@ -161,8 +183,8 @@
                         user experiences.
                     </p>
                 </div>
-                <div class="attorney-content">
-                    <div class="lawyer">
+                <ul class="attorney-content">
+                    <li class="lawyer">
 
                         <div class="img-lawyer">
                             <img src="img/adam-suarez.png" alt="">
@@ -171,8 +193,8 @@
                             <span class="lawyer-username">Adam Suarez</span>
                             <span class="lawyer-function">Attorney General</span>
                         </div>
-                    </div>
-                    <div class="lawyer">
+                    </li>
+                    <li class="lawyer">
 
                         <div class="img-lawyer">
                             <img src="img/lina-suarez.png" alt="">
@@ -181,8 +203,8 @@
                             <span class="lawyer-username">Lina Suarez</span>
                             <span class="lawyer-function">Attorney General</span>
                         </div>
-                    </div>
-                    <div class="lawyer">
+                    </li>
+                    <li class="lawyer">
                         <div class="img-lawyer">
                             <img src="img/jems-snow.png" alt="">
                         </div>
@@ -190,8 +212,8 @@
                             <span class="lawyer-username">Jems Snow</span>
                             <span class="lawyer-function">Attorney General</span>
                         </div>
-                    </div>
-                    <div class="lawyer">
+                    </li>
+                    <li class="lawyer">
                         <div class="img-lawyer">
                             <img src="img/linister-white.png" alt="">
                         </div>
@@ -199,46 +221,384 @@
                             <span class="lawyer-username">Linister White</span>
                             <span class="lawyer-function">Attorney General</span>
                         </div>
+                    </li>
+            </div>
+    </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Clients Say</h2>
+                <p>We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user
+                    experiences.
+                </p>
+            </div>
+            <div class="clients-content">
+                <div class="owl-carousel owl-theme">
+                    <div class="item review">
+                        <div class="review-image">
+                            <img class="review-client" src="img/review-client.png" width="370px" height="307px" alt="">
+                        </div>
+                        <div class="review-content">
+                            <div class="review-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem ipsum dolor sit amet,
+                                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                                </p>
+                                <span class="client-name">
+                                    Alon Smith
+                                </span>
+                                <span class="client-function">
+                                    CEO of AVC Group
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item review">
+                        <div class="review-image">
+                            <img class="review-client" src="img/review-client.png" width="370px" height="307px" alt="">
+                        </div>
+                        <div class="review-content">
+                            <div review-text>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem ipsum dolor sit amet,
+                                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                                </p>
+                                <span class="client-name">
+                                    Alon Smith
+                                </span>
+                                <span class="client-function">
+                                    CEO of AVC Group
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item review">
+                        <div class="review-image">
+                            <img class="review-client" src="img/review-client.png" width="370px" height="307px" alt="">
+                        </div>
+                        <div class="review-content">
+                            <div review-text>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem ipsum dolor sit amet,
+                                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                                </p>
+                                <span class="client-name">
+                                    Alon Smith
+                                </span>
+                                <span class="client-function">
+                                    CEO of AVC Group
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-
-        <section class="clients" id="clients">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Our Clients Say</h2>
-                    <p>We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed
-                        user experiences.
-                    </p>
-                </div>
-                <div class="clients-content">
-
-                </div>
+        </div>
+    </section>
+    <!-- Recent Publications Section -->
+    <section class="recent-publications yellow-section" id="recent-publications">
+        <div class="container">
+            <div class="section-title">
+                <h2>Recent Publications</h2>
+                <p>We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user
+                    experiences.
+                </p>
             </div>
 
-        </section>
+            <div class="publications-content">
+                <ul>
+                    <li>
+                        <div class="caption">
+                            <img src="img/publication1.png" alt="">
+                        </div>
+                        <div class="post-meta">
+                            <span class="post-title">
+                                Publication Title
+                            </span>
+                            <span class="post-author">
+                                <span class="italic">By</span>
+                                Adam Suarez
+                            </span>
+                            <span class="post-date italic">12 Nov, 2015</span>
+                        </div>
+                        <div class="post-content clearfix">
 
-        <section class="recent-publications" id="recent-publications">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                                duo dolores et ea rebum.</p>
+                        </div>
+                        <div class="post-links">
+                            <span class="comments">
+                                <a class="comments-link" href="">
+                                    <img src="img/comments.png" class="icon" alt="">
+                                    <span>29 Comments</span>
+                                </a>
+                            </span>
+                            <span class="share">
+                                <a class="share-link" href="">
+                                    <img src="img/share.png" class="icon" alt="">
+                                    <span>Share</span>
+                                </a>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="caption">
+                            <img src="img/publication2.png" alt="">
+                        </div>
+                        <div class="post-meta">
+                            <span class="post-title">
+                                Publication Title
+                            </span>
+                            <span class="post-author">
+                                <span class="italic">By</span>
+                                Adam Suarez
+                            </span>
+                            <span class="post-date italic">12 Nov, 2015</span>
+                        </div>
+                        <div class="post-content clearfix">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                                duo dolores et ea rebum.</p>
+                        </div>
+                        <div class="post-links">
+                            <span class="comments">
+                                <a class="comments-link" href="">
+                                    <img src="img/comments.png" class="icon" alt="">
+                                    <span>29 Comments</span>
+                                </a>
+                            </span>
+                            <span class="share">
+                                <a class="share-link" href="">
+                                    <img src="img/share.png" class="icon" alt="">
+                                    <span>Share</span>
+                                </a>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="caption">
+                            <img src="img/publication3.png" alt="">
+                        </div>
+                        <div class="post-meta">
+                            <span class="post-title">
+                                Publication Title
+                            </span>
+                            <span class="post-author">
+                                <span class="italic">By</span>
+                                Adam Suarez
+                            </span>
+                            <span class="post-date italic">12 Nov, 2015</span>
+                        </div>
+                        <div class="post-content clearfix">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                                duo dolores et ea rebum.</p>
+                        </div>
+                        <div class="post-links">
+                            <span class="comments">
+                                <a class="comments-link" href="">
+                                    <img src="img/comments.png" class="icon" alt="">
+                                    <span>29 Comments</span>
+                                </a>
+                            </span>
+                            <span class="share">
+                                <a class="share-link" href="">
+                                    <img src="img/share.png" class="icon" alt="">
+                                    <span>Share</span>
+                                </a>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Faq Section -->
+    <section class="faq black-section" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently asked questions</h2>
+                <p>We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user
+                    experiences.
+                </p>
+            </div>
+            <div class="faq-content">
+                <ul class="questions">
+                    <li class="question-item">
+                        <span class="question">What paperwork do I need to complete to file for divorce?</span>
+                        <span class="q-icon"></span>
+                    </li>
+                    <li class="question-item">
+                        <span class="question">How do I change my custody and suport orders?</span>
+                        <span class="q-icon"></span>
 
-        </section>
+                    </li>
+                    <li class="question-item">
+                        <span class="question">How to make a General Diary?</span>
+                        <span class="q-icon"></span>
+                    </li>
+                    <li class="question-item">
+                        <span class="question">What paperwork do I need to complete to file for divorce?</span>
+                        <span class="q-icon"></span>
+                    </li>
+                    <li class="question-item">
+                        <span class="question">How do I protect a business name?</span>
+                        <span class="q-icon"></span>
+                    </li>
+                    <li class="question-item">
+                        <span class="question">
+                            Should I incorporate my business?</span>
+                        <span class="q-icon"></span>
+                    </li>
+                </ul>
+                <ul class="answers">
+                    <li class="answer-item">
+                        <p>
+                            Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The
+                            point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English.
+                        </p>
+                    </li>
+                    <li class="answer-item">
+                        <p>
+                            Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The
+                            point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English.
+                        </p>
+                    </li>
+                    <li class="answer-item">
+                        <p>
+                            Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The
+                            point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English.
+                        </p>
+                    </li>
+                    <li class="answer-item">
+                        <p>
+                            Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The
+                            point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English.
+                        </p>
+                    </li>
+                    <li class="answer-item">
+                        <p>
+                            Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The
+                            point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English.
+                        </p>
+                    </li>
+                    <li class="answer-item">
+                        <p>
+                            Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The
+                            point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English.
+                        </p>
+                    </li>
 
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section  -->
+    <section class="contact yellow-section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Feel Free to Contact</h2>
+                <p>We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user
+                    experiences.
+                </p>
+            </div>
 
-        <section class="faq" id="faq">
-
-        </section>
-
-
-        <section class="contact" id="contact">
-
-        </section>
-
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form action="">
+                        <input type="text" placeholder="Enter your name...">
+                        <input type="text" placeholder="Enter your email...">
+                        <input type="text" placeholder="Enter your phone">
+                        <textarea name="" id="" rows="4" placeholder="Enter your message..."></textarea>
+                        <button>Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-map">
+                    <div id="map">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </div>
+    <!-- Footer -->
     <footer class="footer" id="footer">
+        <div class="container">
+            <div class="copyright">
+                <span class="copyright-text">Copyright © 2018</span>
+                - Made with
+                <img src="img/copyright.png" width="16px" alt=""> by Abdessalam BENHARIRA
+            </div>
 
+            <div class="social-links">
+                <ul>
+                    <li class="facebook">
+                        <a href=""></a>
+                    </li>
+                    <li class="twitter">
+                        <a href=""></a>
+                    </li>
+                    <li class="gplus">
+                        <a href=""></a>
+                    </li>
+                    <li class="instagram">
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </footer>
+    <!-- To top button -->
+    <div class="backtotop">
+        <a href="#top" class="scrollTop">
+            <span class="chevron-icon"></span>
+        </a>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+    <script>
+        function initMap() {
+            var idc = {
+                lat: 48.901670,
+                lng: 2.208041
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: idc
+            });
+            var marker = new google.maps.Marker({
+                position: idc,
+                map: map
+            });
 
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnjBh1ubduevCQq1QVBISQ8zDak-0Fbj0&callback=initMap" async
+        defer>
+    </script>
+    <script src="js/scrollSpy.js"></script>
+    <script>
+        var menu = document.querySelector('.navbar');
+        scrollSpy(menu);
+    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
