@@ -1,5 +1,4 @@
 jQuery(document).ready(function ($) {
-	'use strict';
 	// fixed navbar on scroll and display backtotop
 	$(window).on('scroll', function () {
 		if ($(window).scrollTop() > 270) {

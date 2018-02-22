@@ -51,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 .clear {
@@ -97,7 +97,7 @@ section {
 
 .section-title h2 {
     margin-top: 0;
-    letter-spacing: 0.04em;
+    letter-spacing: 1.24px;
     font-size: 31px;
     font-weight: initial;
 }
@@ -136,10 +136,8 @@ section {
 
 .nav-mobile .main-mobile {
     width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
     display: block;
-    padding: 1rem 1.5rem;
+    padding: 16px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -147,9 +145,9 @@ section {
 
 .nav-mobile .logo-nav {
     display: inline-block;
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-    margin-right: 1rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 16px;
     line-height: inherit;
     white-space: nowrap;
 }
@@ -274,9 +272,6 @@ header.main-head {
     position: relative;
     background-color: #343a40;
     background: url(../img/header-innershadow.png) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     height: 88.5vh;
 }
@@ -307,9 +302,6 @@ header.main-head {
 .overlay {
     opacity: 0.8;
     background: url('../img/innershadow.png') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     position: absolute;
     height: 100%;
@@ -477,7 +469,7 @@ header.main-head {
 
 .practice-content .practice-title {
     font-size: 21px;
-    letter-spacing: 0.04em;
+    letter-spacing: 1px;
     margin-bottom: 32px;
     font-weight: initial;
     margin-top: 0;
@@ -485,7 +477,7 @@ header.main-head {
 
 .practice-content .practice-text {
     font-size: 14px;
-    letter-spacing: 0.04em;
+    letter-spacing: 1px;
     line-height: 28px;
 }
 
@@ -635,20 +627,8 @@ header.main-head {
 }
 
 .clients .review {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    -o-flex-direction: row;
     flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -723,10 +703,10 @@ header.main-head {
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .recent-publications .publications-content ul li {
-    display: inline-block;
     display: inline-block;
     width: 350px;
     margin: 0 30px 40px 0;
@@ -778,6 +758,9 @@ header.main-head {
 .recent-publications .publications-content .post-title {
     font-size: 21px;
     display: block;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 21px;
+    letter-spacing: 0.84px;
 }
 
 .recent-publications .publications-content i.comments-icon::before {
@@ -851,6 +834,7 @@ header.main-head {
 
 .faq .faq-content .question-item.active {
     width: 566px;
+    color: #e8bf5d;
 }
 
 .faq .faq-content .question-item .q-icon {
@@ -886,7 +870,6 @@ header.main-head {
 
 .faq .faq-content .answers {
     list-style: none;
-    padding: 0;
     display: none;
     margin: 0;
     vertical-align: top;
@@ -1267,9 +1250,6 @@ footer.footer .social-links .instagram:focus {
         text-align: center;
         float: initial;
     }
-    .recent-publications .publications-content ul {
-        text-align: center;
-    }
     .recent-publications .publications-content ul li {
         display: inline-block;
         width: 90%;
@@ -1282,15 +1262,6 @@ footer.footer .social-links .instagram:focus {
     .recent-publications .publications-content ul li .post-links {
         padding-right: 15px;
         padding-left: 15px;
-    }
-    .about-us .container::before,
-    .practice-area .container::before,
-    .attorney .container::before,
-    .clients .container::before,
-    .recent-publications .container::before,
-    .faq .container::before,
-    .contact .container::before {
-        top: -5px;
     }
     .contact .contact-form,
     .contact .contact-map {
@@ -1306,6 +1277,9 @@ footer.footer .social-links .instagram:focus {
     .faq .faq-content .questions,
     .faq .faq-content .answers {
         display: block !important;
+    }
+    .faq .faq-content .answers {
+        padding: 0;
     }
     .faq .faq-content .answer-item {
         margin: auto;
@@ -1358,6 +1332,15 @@ footer.footer .social-links .instagram:focus {
     .attorney .lawyer .infos-lawyer {
         padding: 15px;
     }
+    .about-us .container::before,
+    .practice-area .container::before,
+    .attorney .container::before,
+    .clients .container::before,
+    .recent-publications .container::before,
+    .faq .container::before,
+    .contact .container::before {
+        top: -5px;
+    }
 }
 
 /* Device width < 575px
@@ -1377,7 +1360,7 @@ footer.footer .social-links .instagram:focus {
     }
     .about-content .year {
         width: 20%;
-        vertical-align: 100%;
+        vertical-align: 50%;
     }
     .about-content .h-content {
         width: 65%;
