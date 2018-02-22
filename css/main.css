@@ -334,6 +334,7 @@ header.main-head {
     border-radius: 25px;
     padding: 15px 45px;
     text-decoration: none;
+    transition: all .3s;
 }
 
 .btn-link:hover,
@@ -983,6 +984,7 @@ header.main-head {
     margin-left: 18px;
     cursor: pointer;
     outline: none;
+    transition: all .3s;
 }
 
 .contact-form button:hover,
@@ -1025,6 +1027,17 @@ footer.footer .copyright img {
 footer.footer .copyright-text {
     font-family: 'Playfair Display', sans-serif;
     color: #b5b5b5;
+}
+
+footer.footer .copyright a {
+    color: #666666;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+footer.footer .copyright a:hover,
+footer.footer .copyright a:focus {
+    color: #fff;
 }
 
 footer.footer .social-links {

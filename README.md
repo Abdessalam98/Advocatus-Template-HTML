@@ -34,3 +34,7 @@ Le livrable devra être un zip contenant l’intégralité des fichiers (Les fic
 [Lien](https://abdessalam-benharira-advocatus.herokuapp.com/)
 
 ![screen projet](img/advocatus_site.png)
+
+## Auteur
+
+[Abdessalam BENHARIRA](https://github.com/Abdessalam98/)
